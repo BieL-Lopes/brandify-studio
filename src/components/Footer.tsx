@@ -1,5 +1,5 @@
 import { Phone, MessageCircle, MapPin } from "lucide-react";
-import kgLogo from "@/assets/kg-logo.png";
+import kgLogo from "@/assets/kg-logo-footer.png";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
             <img 
               src={kgLogo} 
               alt="KG Serigrafia" 
-              className="h-20 w-auto mb-4 brightness-0 invert"
+              className="h-16 w-auto mb-4"
             />
             <p className="text-sm text-primary-foreground/70 text-center md:text-left">
               Desde 1996 transformando marcas em presença.
