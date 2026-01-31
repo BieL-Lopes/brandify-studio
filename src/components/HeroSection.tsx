@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Award, Truck, Sparkles } from "lucide-react";
-import kgLogo from "@/assets/kg-logo.png";
+import kgLogo from "@/assets/kg-logo-hero.png";
 
 const HeroSection = () => {
   const whatsappLink = "https://wa.me/5561991029997?text=Olá! Gostaria de solicitar um orçamento para brindes personalizados.";

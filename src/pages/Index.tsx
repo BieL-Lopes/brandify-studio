@@ -4,6 +4,7 @@ import ProductsSection from "@/components/ProductsSection";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <WhyChooseSection />
       <CTASection />
       <Footer />
+      <WhatsAppFloat />
     </main>
   );
 };
