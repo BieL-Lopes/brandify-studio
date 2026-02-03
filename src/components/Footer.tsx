@@ -1,4 +1,4 @@
-import { Phone, MessageCircle, MapPin } from "lucide-react";
+import { MessageCircle, MapPin } from "lucide-react";
 import kgLogo from "@/assets/kg-logo-footer.png";
 
 const Footer = () => {
@@ -21,24 +21,15 @@ const Footer = () => {
           {/* Contact */}
           <div className="text-center">
             <h3 className="font-bold text-lg mb-4">Contato</h3>
-            <div className="space-y-3">
-              <a 
-                href="tel:+556130827723" 
-                className="flex items-center justify-center gap-2 hover:text-secondary transition-colors"
-              >
-                <Phone className="w-4 h-4" />
-                (61) 3082-7723
-              </a>
-              <a 
-                href="https://wa.me/5561991029997" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 hover:text-secondary transition-colors"
-              >
-                <MessageCircle className="w-4 h-4" />
-                (61) 99102-9997
-              </a>
-            </div>
+            <a 
+              href="https://wa.me/5561991029997" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 hover:text-secondary transition-colors"
+            >
+              <MessageCircle className="w-4 h-4" />
+              (61) 99102-9997
+            </a>
           </div>
 
           {/* Location */}

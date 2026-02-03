@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Phone, Truck, Zap } from "lucide-react";
+import { MessageCircle, Truck, Zap } from "lucide-react";
 
 const CTASection = () => {
   const whatsappLink = "https://wa.me/5561991029997?text=Olá! Gostaria de solicitar um orçamento para brindes personalizados.";
@@ -29,7 +29,7 @@ const CTASection = () => {
           </p>
 
           {/* Contact info */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-10">
+          <div className="flex justify-center items-center mb-10">
             <div className="flex items-center gap-3 text-primary">
               <div className="w-12 h-12 bg-white/80 rounded-full flex items-center justify-center">
                 <MessageCircle className="w-6 h-6 text-accent" />
@@ -37,15 +37,6 @@ const CTASection = () => {
               <div className="text-left">
                 <p className="text-sm font-medium opacity-80">WhatsApp</p>
                 <p className="font-bold text-lg">(61) 99102-9997</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 text-primary">
-              <div className="w-12 h-12 bg-white/80 rounded-full flex items-center justify-center">
-                <Phone className="w-6 h-6 text-accent" />
-              </div>
-              <div className="text-left">
-                <p className="text-sm font-medium opacity-80">Telefone</p>
-                <p className="font-bold text-lg">(61) 3082-7723</p>
               </div>
             </div>
           </div>
