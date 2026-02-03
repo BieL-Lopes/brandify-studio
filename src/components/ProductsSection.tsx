@@ -1,7 +1,8 @@
-import { Check } from "lucide-react";
+import { Check, Instagram } from "lucide-react";
 import productSacola from "@/assets/product-sacola.png";
 import productAdesivos from "@/assets/product-adesivos.png";
 import productCanetas from "@/assets/product-canetas.png";
+import { Button } from "@/components/ui/button";
 
 const products = [
   { name: "Adesivos personalizados", description: "Divulgação prática para marcas e campanhas" },
@@ -104,6 +105,40 @@ const ProductsSection = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl py-8 px-6 mt-8">
+          <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="flex items-center gap-4">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-purple-600 via-pink-600 to-orange-500 flex items-center justify-center flex-shrink-0">
+                <Instagram className="w-8 h-8 text-white" />
+              </div>
+              <div className="text-left">
+                <h3 className="text-xl font-bold text-primary mb-1">
+                  Siga a KG Serigrafia no Instagram
+                </h3>
+                <p className="text-muted-foreground">
+                  Fotos dos nossos trabalhos e novidades
+                </p>
+              </div>
+            </div>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              asChild
+              className="bg-white hover:bg-primary hover:text-white transition-all duration-300 border-2 border-primary flex-shrink-0"
+            >
+              <a 
+                href="https://www.instagram.com/kgserigrafia/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <Instagram className="w-5 h-5" />
+                @kgserigrafia
+              </a>
+            </Button>
           </div>
         </div>
       </div>
