@@ -4,7 +4,7 @@ const AboutSection = () => {
   const stats = [
     { icon: Calendar, value: "1996", label: "Desde" },
     { icon: Award, value: "+25", label: "Anos de experiência" },
-    { icon: Users, value: "1000+", label: "Clientes atendidos" },
+    { icon: Users, value: "100.000+", label: "Clientes atendidos" },
     { icon: Truck, value: "Brasil", label: "Entrega nacional" },
   ];
 
@@ -42,13 +42,13 @@ const AboutSection = () => {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="bg-muted p-6 rounded-2xl text-center hover:shadow-lg transition-shadow duration-300 border border-border/50"
+                className="bg-muted p-4 sm:p-6 rounded-2xl text-center hover:shadow-lg transition-shadow duration-300 border border-border/50"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-secondary rounded-xl mb-4">
-                  <stat.icon className="w-6 h-6 text-primary" />
+                <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-secondary rounded-xl mb-3 sm:mb-4">
+                  <stat.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
-                <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <div className="text-2xl sm:text-3xl font-bold text-primary mb-1 break-words">{stat.value}</div>
+                <div className="text-xs sm:text-sm text-muted-foreground leading-tight">{stat.label}</div>
               </div>
             ))}
           </div>
